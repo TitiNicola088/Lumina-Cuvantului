@@ -6,71 +6,107 @@
 <title>Lumina Cuvântului</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f8f5ef;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f7f4ed;
 color:#222;
+line-height:1.6;
 }
 
 header{
-background:linear-gradient(135deg,#3b2a14,#caa34d);
+background:linear-gradient(135deg,#0d1b2a,#1b263b,#415a77);
 color:white;
-padding:60px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
 header h1{
 font-size:48px;
-margin:0;
+margin-bottom:15px;
 }
 
 header p{
 font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#d4af37;
+color:#111;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
 }
 
 nav{
-background:#222;
-padding:15px;
-text-align:center;
+background:#14213d;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+padding:18px;
+gap:20px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:15px;
 font-weight:bold;
 }
 
 section{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-padding:30px;
+padding:50px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#14213d;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
-padding:20px;
-margin:20px 0;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.15);
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
 }
 
-.button{
-display:inline-block;
-padding:14px 24px;
-background:#caa34d;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+.card h3{
+margin-bottom:15px;
+color:#0d1b2a;
+}
+
+blockquote{
+font-size:22px;
+font-style:italic;
+text-align:center;
+border-left:5px solid #d4af37;
+padding:20px;
+background:white;
+border-radius:10px;
 }
 
 footer{
-background:#222;
+background:#0d1b2a;
 color:white;
 text-align:center;
-padding:30px;
+padding:40px 20px;
 margin-top:50px;
 }
 </style>
@@ -83,112 +119,9 @@ margin-top:50px;
 
 <h1>📖 Lumina Cuvântului</h1>
 
-<p>Cuvântul lui Dumnezeu pentru fiecare inimă.</p>
+<p>Cuvântul Tău este o candelă pentru picioarele mele și o lumină pe cărarea mea.</p>
 
-<a class="button" href="#studii">Începe studiul Bibliei</a>
-
-</header>
-
-<nav>
-
-<a href="#">Acasă</a>
-
-<a href="#">Biblia</a>
-
-<a href="#">Studii Biblice</a>
-
-<a href="#">Bibliotecă PDF</a>
-
-<a href="#">Contact</a>
-
-</nav><!DOCTYPE html>
-<html lang="ro">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lumina Cuvântului</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f8f5ef;
-color:#222;
-}
-
-header{
-background:linear-gradient(135deg,#3b2a14,#caa34d);
-color:white;
-padding:60px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:48px;
-margin:0;
-}
-
-header p{
-font-size:22px;
-}
-
-nav{
-background:#222;
-padding:15px;
-text-align:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-}
-
-section{
-max-width:1000px;
-margin:auto;
-padding:30px;
-}
-
-.card{
-background:white;
-padding:20px;
-margin:20px 0;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.15);
-}
-
-.button{
-display:inline-block;
-padding:14px 24px;
-background:#caa34d;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:50px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h1>📖 Lumina Cuvântului</h1>
-
-<p>Cuvântul lui Dumnezeu pentru fiecare inimă.</p>
-
-<a class="button" href="#studii">Începe studiul Bibliei</a>
+<a class="btn" href="#biblia">Începe studiul Bibliei</a>
 
 </header>
 
@@ -196,115 +129,106 @@ margin-top:50px;
 
 <a href="#">Acasă</a>
 
-<a href="#">Biblia</a>
+<a href="#biblia">Biblia</a>
 
-<a href="#">Studii Biblice</a>
+<a href="#studii">Studii Biblice</a>
 
-<a href="#">Bibliotecă PDF</a>
+<a href="#pdf">Bibliotecă PDF</a>
 
-<a href="#">Contact</a>
-
-</nav><!DOCTYPE html>
-<html lang="ro">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lumina Cuvântului</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f8f5ef;
-color:#222;
-}
-
-header{
-background:linear-gradient(135deg,#3b2a14,#caa34d);
-color:white;
-padding:60px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:48px;
-margin:0;
-}
-
-header p{
-font-size:22px;
-}
-
-nav{
-background:#222;
-padding:15px;
-text-align:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-}
-
-section{
-max-width:1000px;
-margin:auto;
-padding:30px;
-}
-
-.card{
-background:white;
-padding:20px;
-margin:20px 0;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.15);
-}
-
-.button{
-display:inline-block;
-padding:14px 24px;
-background:#caa34d;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:50px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h1>📖 Lumina Cuvântului</h1>
-
-<p>Cuvântul lui Dumnezeu pentru fiecare inimă.</p>
-
-<a class="button" href="#studii">Începe studiul Bibliei</a>
-
-</header>
-
-<nav>
-
-<a href="#">Acasă</a>
-
-<a href="#">Biblia</a>
-
-<a href="#">Studii Biblice</a>
-
-<a href="#">Bibliotecă PDF</a>
-
-<a href="#">Contact</a>
+<a href="#contact">Contact</a>
 
 </nav>
+
+<section>
+
+<blockquote>
+
+„Cuvântul Tău este o candelă pentru picioarele mele și o lumină pe cărarea mea.”
+
+<br><br>
+
+<b>Psalmul 119:105</b>
+
+</blockquote>
+
+</section>
+
+<section id="biblia">
+
+<h2>📖 Explorează</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>📖 Biblia</h3>
+
+<p>Citește și studiază cele 66 de cărți ale Scripturii.</p>
+
+</div>
+
+<div class="card">
+
+<h3>📚 Studii Biblice</h3>
+
+<p>Studii aprofundate și explicații bazate pe Biblie.</p>
+
+</div>
+
+<div class="card">
+
+<h3>📄 Biblioteca PDF</h3>
+
+<p>Descarcă gratuit studiile și materialele disponibile.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🙏 Rugăciuni</h3>
+
+<p>Rugăciuni și meditații bazate pe Cuvântul lui Dumnezeu.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="studii">
+
+<h2>Ultimele studii</h2>
+
+<div class="grid">
+
+<div class="card">Geneza</div>
+
+<div class="card">Matei</div>
+
+<div class="card">Romani</div>
+
+<div class="card">1 Cronici</div>
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<h2 style="color:white;">Lumina Cuvântului</h2>
+
+<p>
+
+Vestim Evanghelia Domnului Isus Hristos prin studii biblice gratuite.
+
+</p>
+
+<br>
+
+<p>© 2026 Lumina Cuvântului</p>
+
+</footer>
+
+</body>
+
+</html>
