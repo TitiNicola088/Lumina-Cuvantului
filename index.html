@@ -45,7 +45,67 @@ display:block;
 a{
 text-decoration:none;
 }
+.header{
+background:#071223;
+position:sticky;
+top:0;
+z-index:1000;
+}
 
+.nav{
+height:92px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+color:white;
+}
+
+.logo img{
+height:58px;
+}
+
+.logo-text h2{
+font-size:30px;
+font-weight:800;
+line-height:1;
+color:white;
+}
+
+.logo-text span{
+font-size:24px;
+font-weight:700;
+color:#d6b15a;
+}
+
+nav{
+display:flex;
+gap:28px;
+}
+
+nav a{
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+color:#d6b15a;
+}
+
+.icons{
+display:flex;
+gap:20px;
+font-size:22px;
+color:white;
+cursor:pointer;
+}
 </style>
 
 </head>
