@@ -187,11 +187,8 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 30px;
+    padding:18px 30px;
     background:#0b1120;
-    position:sticky;
-    top:0;
-    z-index:1000;
 }
 
 .logo{
