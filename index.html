@@ -1,13 +1,162 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumina Cuvântului</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumina Cuvântului</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#090d16;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#111827;
+border-bottom:1px solid #2d3748;
+}
+
+.logo{
+color:#d4af37;
+font-size:26px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+padding:80px 25px;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#d4af37;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+background:#d4af37;
+padding:15px 35px;
+border-radius:10px;
+color:#111;
+text-decoration:none;
+font-weight:bold;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:40px 20px;
+}
+
+.card{
+background:#151b28;
+padding:30px;
+border-radius:18px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h2{
+color:#d4af37;
+margin-bottom:10px;
+}
+</style>
+
 </head>
-<body style="background:#0b1120;color:white;font-family:Arial,sans-serif;text-align:center;padding:50px;">
-  <h1>Lumina Cuvântului</h1>
-  <p>„Cuvântul Tău este o lumină pentru picioarele mele și o lumină pe cărarea mea.”</p>
-  <p><strong>Psalmul 119:105</strong></p>
+<body>
+
+<header>
+
+<div class="logo">
+✝ Lumina Cuvântului
+</div>
+
+<nav>
+<a href="#">Acasă</a>
+<a href="#">Biblia</a>
+<a href="#">Studii</a>
+<a href="#">Planuri</a>
+<a href="#">Rugăciuni</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Cuvântul Tău este o <span>lumină</span></h1>
+
+<p>
+pentru picioarele mele și o lumină pe cărarea mea.
+</p>
+
+<p><strong>Psalmul 119:105</strong></p>
+
+<a class="button" href="#">
+Citește Biblia
+</a>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h2>📖 Biblia</h2>
+<p>Citește Sfânta Scriptură.</p>
+</div>
+
+<div class="card">
+<h2>📚 Studii</h2>
+<p>Studii biblice aprofundate.</p>
+</div>
+
+<div class="card">
+<h2>🙏 Rugăciuni</h2>
+<p>Rugăciuni pentru fiecare zi.</p>
+</div>
+
+<div class="card">
+<h2>📅 Planuri</h2>
+<p>Planuri de citire.</p>
+</div>
+
+</section>
+
 </body>
 </html>
