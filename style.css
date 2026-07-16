@@ -1,78 +1,224 @@
+/* =====================================================
+   LUMINA CUVÂNTULUI
+   STYLE.CSS - PARTEA 1
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+:root{
+
+--navy:#071223;
+--navy2:#0b1830;
+--gold:#d6b15a;
+--gold2:#f0d58a;
+--white:#ffffff;
+--cream:#f8f4ea;
+--text:#222;
+
+--radius:18px;
+
+--shadow:
+0 12px 35px rgba(0,0,0,.18);
+
+}
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Inter,Arial,sans-serif;
-background:#f8f4ea;
-color:#222;
+
+font-family:'Inter',sans-serif;
+background:var(--cream);
+color:var(--text);
+overflow-x:hidden;
+line-height:1.6;
+
+}
+
+img{
+display:block;
+max-width:100%;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
 }
 
 .container{
-width:92%;
-max-width:1400px;
+
+width:min(92%,1400px);
 margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
+
 }
 
+/* ==========================
+   HEADER
+========================== */
+
 .header{
-background:#071223;
-height:90px;
-position:sticky;
+
+position:fixed;
 top:0;
+left:0;
+width:100%;
+height:90px;
+
+background:rgba(7,18,35,.95);
+
+backdrop-filter:blur(12px);
+
 z-index:999;
+
+border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.nav{
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
 }
 
 .logo{
+
 display:flex;
+
 align-items:center;
-gap:15px;
-text-decoration:none;
+
+gap:14px;
+
 }
 
 .logo img{
-height:60px;
+
+height:58px;
+
 width:auto;
+
 }
 
 .logo-text h2{
-color:#fff;
-font-size:32px;
-font-weight:800;
+
+font-size:30px;
+
 line-height:1;
+
+font-weight:800;
+
+color:white;
+
 }
 
 .logo-text span{
-color:#d6b15a;
-font-size:24px;
-font-weight:700;
+
+display:block;
+
+margin-top:4px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:var(--gold);
+
 }
 
+/* ==========================
+   MENIU
+========================== */
+
 nav{
+
 display:flex;
+
+align-items:center;
+
 gap:28px;
+
 }
 
 nav a{
+
 color:white;
-text-decoration:none;
+
+font-size:16px;
+
 font-weight:600;
+
 transition:.3s;
+
+position:relative;
+
 }
 
-nav a:hover,
-nav a.active{
-color:#d6b15a;
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:0;
+
+height:2px;
+
+background:var(--gold);
+
+transition:.3s;
+
 }
 
-.right-icons{
+nav a:hover{
+
+color:var(--gold);
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+.active{
+
+color:var(--gold);
+
+}
+
+.icons{
+
 display:flex;
-gap:18px;
+
+align-items:center;
+
+gap:20px;
+
 font-size:22px;
+
 color:white;
+
 cursor:pointer;
+
 }
