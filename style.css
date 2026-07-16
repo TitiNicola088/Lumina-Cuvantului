@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Cuvântului</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>✝ Lumina Cuvântului</h1>
+</header>
+
+<main>
+
+<section class="hero">
+
+<h2>
+Cuvântul lui Dumnezeu este lumina vieții.
+</h2>
+
+<p>
+"Cuvântul Tău este o lumină pentru picioarele mele și o lumină pe cărarea mea."
+</p>
+
+<p><strong>Psalmul 119:105</strong></p>
+
+<a href="#" class="button">
+📖 Citește Biblia
+</a>
+
+</section>
+
+</main>
+
+</body>
+</html>
