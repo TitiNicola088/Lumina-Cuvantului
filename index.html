@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Lumina Cuvântului</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -13,226 +21,234 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f7f4ed;
+font-family:Inter,sans-serif;
+background:#f8f4ea;
 color:#222;
-line-height:1.6;
 }
-
-header{
-background:linear-gradient(135deg,#0d1b2a,#1b263b,#415a77);
-color:white;
-padding:80px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:48px;
-margin-bottom:15px;
-}
-
-header p{
-font-size:22px;
-margin-bottom:25px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 30px;
-background:#d4af37;
-color:#111;
-text-decoration:none;
-font-weight:bold;
-border-radius:40px;
-}
-
-nav{
-background:#14213d;
+.navbar{
+background:#071223;
+height:90px;
 display:flex;
-justify-content:center;
-flex-wrap:wrap;
-padding:18px;
-gap:20px;
+align-items:center;
+justify-content:space-between;
+padding:0 60px;
+}
+
+.logo img{
+  nav{
+display:flex;
+gap:30px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d6b15a;
+}
+
+.icons{
+display:flex;
+gap:20px;
+font-size:22px;
+color:white;
+}
+
+.hero{
+background:#071223;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 60px;
+}
+
+.hero-text{
+max-width:550px;
+}
+
+.hero-text h1{
+font-size:60px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.hero-image img{
+width:550px;
+border-radius:20px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+margin-top:30px;
+}
+
+.buttons a{
+background:#d6b15a;
+color:white;
+padding:16px 28px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+}
+height:60px;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.hero{
+background:#071223;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px;
+}
+
+.hero-text{
+max-width:550px;
+}
+
+.hero-text h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+margin-top:30px;
+}
+
+.buttons a{
+background:#d4a62a;
+color:white;
+padding:16px 28px;
+border-radius:10px;
+text-decoration:none;
 font-weight:bold;
 }
 
-section{
-max-width:1100px;
-margin:auto;
-padding:50px 20px;
-}
-
-h2{
-text-align:center;
-margin-bottom:30px;
-color:#14213d;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-text-align:center;
-}
-
-.card h3{
-margin-bottom:15px;
-color:#0d1b2a;
-}
-
-blockquote{
-font-size:22px;
-font-style:italic;
-text-align:center;
-border-left:5px solid #d4af37;
-padding:20px;
-background:white;
-border-radius:10px;
-}
-
-footer{
-background:#0d1b2a;
-color:white;
-text-align:center;
-padding:40px 20px;
-margin-top:50px;
+.hero-image img{
+width:550px;
+border-radius:20px;
 }
 </style>
 
 </head>
 
+
 <body>
 
-<header>
 
-<div style="display:flex;justify-content:center;align-items:center;gap:15px;flex-wrap:wrap;">
+<header class="navbar">
 
-<img src="406C3567-613F-41F3-AF65-160BC65A769E.png"
-alt="Lumina Cuvântului"
-style="width:90px;height:90px;border-radius:50%;">
-
-<h1 style="margin:0;">Lumina Cuvântului</h1>
-
+<div class="logo">
+<img src="406C3567-613F-41F3-AF65-160BC65A769E.png" alt="Logo">
 </div>
-
-<p>Cuvântul Tău este o candelă pentru picioarele mele și o lumină pe cărarea mea.</p>
-
-<a class="btn" href="#biblia">Începe studiul Bibliei</a>
-
-</header>
 
 <nav>
 
 <a href="#">Acasă</a>
-
-<a href="#biblia">Biblia</a>
-
-<a href="#studii">Studii Biblice</a>
-
-<a href="#pdf">Bibliotecă PDF</a>
-
-<a href="#contact">Contact</a>
+<a href="#">Biblia</a>
+<a href="#">Studii</a>
+<a href="#">Bibliotecă</a>
+<a href="#">Rugăciuni</a>
+<a href="#">Plan de citire</a>
+<a href="#">Despre noi</a>
+<a href="#">Contact</a>
 
 </nav>
 
-<section>
+<div class="icons">
 
-<blockquote>
+🌙
 
-„Cuvântul Tău este o candelă pentru picioarele mele și o lumină pe cărarea mea.”
-
-<br><br>
-
-<b>Psalmul 119:105</b>
-
-</blockquote>
-
-</section>
-
-<section id="biblia">
-
-<h2>📖 Explorează</h2>
-
-<div class="grid">
-
-<a href="biblia.html" class="card">
-<h3>📖 Biblia</h3>
-<p>Citește și studiază cele 66 de cărți ale Scripturii.</p>
-</a>
-
-<div class="card">
-
-<h3>📚 Studii Biblice</h3>
-
-<p>Studii aprofundate și explicații bazate pe Biblie.</p>
+🔍
 
 </div>
 
-<div class="card">
+</header>
+  <section class="hero">
 
-<h3>📄 Biblioteca PDF</h3>
+<div class="hero-text">
 
-<p>Descarcă gratuit studiile și materialele disponibile.</p>
+<h1>Cuvântul Tău este o lumină pentru cărarea mea.</h1>
 
-</div>
-
-<div class="card">
-
-<h3>🙏 Rugăciuni</h3>
-
-<p>Rugăciuni și meditații bazate pe Cuvântul lui Dumnezeu.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="studii">
-
-<h2>Ultimele studii</h2>
-
-<div class="grid">
-
-<div class="card">Geneza</div>
-
-<div class="card">Matei</div>
-
-<div class="card">Romani</div>
-
-<div class="card">1 Cronici</div>
-
-</div>
-
-</section>
-
-<footer id="contact">
-
-<h2 style="color:white;">Lumina Cuvântului</h2>
+<p class="verse">Psalmul 119:105</p>
 
 <p>
-
-Vestim Evanghelia Domnului Isus Hristos prin studii biblice gratuite.
-
+Bine ai venit pe <strong>Lumina Cuvântului</strong>, locul unde descoperim adevărul lui Dumnezeu prin Biblie, studiu și rugăciune.
 </p>
 
-<br>
+<div class="buttons">
+<a href="biblia.html">📖 Citește Biblia</a>
+<a href="#">📚 Studii Biblice</a>
+</div>
 
-<p>© 2026 Lumina Cuvântului</p>
+</div>
 
-</footer>
+<div class="hero-image">
+
+<img src="406C3567-613F-41F3-AF65-160BC65A769E.png" alt="Lumina Cuvântului">
+
+</div>
+
+</section>
+  <section class="hero">
+
+<div class="hero-text">
+
+<h1>Cuvântul Tău este o lumină pentru cărarea mea.</h1>
+
+<p>Psalmul 119:105</p>
+
+<p>
+Bine ai venit pe Lumina Cuvântului, locul unde descoperim
+adevărul lui Dumnezeu prin Biblie, studiu și rugăciune.
+</p>
+
+<div class="buttons">
+
+<a href="#">📖 Citește Biblia</a>
+
+<a href="#">📚 Studii Biblice</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="406C3567-613F-41F3-AF65-160BC65A769E.png">
+
+</div>
+
+</section>
 
 </body>
 
