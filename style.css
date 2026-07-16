@@ -235,3 +235,28 @@ font-size:34px;
 }
 
 }
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:58px;
+height:58px;
+object-fit:contain;
+}
+
+.logo h2{
+margin:0;
+font-size:28px;
+color:#d4af37;
+line-height:1;
+}
+
+.logo p{
+margin:0;
+font-size:12px;
+letter-spacing:4px;
+color:#ffffff;
+}
