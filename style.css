@@ -1,39 +1,53 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina Cuvântului</title>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0b1120;
+  color:#fff;
+}
 
-<header>
-    <h1>✝ Lumina Cuvântului</h1>
-</header>
+header{
+  background:#111827;
+  padding:20px;
+  text-align:center;
+}
 
-<main>
+header h1{
+  color:#d4af37;
+  font-size:32px;
+}
 
-<section class="hero">
+main{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
 
-<h2>
-Cuvântul lui Dumnezeu este lumina vieții.
-</h2>
+.hero{
+  text-align:center;
+  padding:80px 20px;
+}
 
-<p>
-"Cuvântul Tău este o lumină pentru picioarele mele și o lumină pe cărarea mea."
-</p>
+.hero h2{
+  font-size:42px;
+  margin-bottom:20px;
+}
 
-<p><strong>Psalmul 119:105</strong></p>
+.hero p{
+  font-size:20px;
+}
 
-<a href="#" class="button">
-📖 Citește Biblia
-</a>
-
-</section>
-
-</main>
-
-</body>
-</html>
+.button{
+  display:inline-block;
+  margin-top:30px;
+  background:#d4af37;
+  color:#111;
+  padding:15px 30px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
