@@ -264,7 +264,7 @@ font-size:34px;
     justify-content:center;
     align-items:flex-start;
     padding:60px 30px;
-    background:linear-gradient(rgba(11,17,32,.55),rgba(11,17,32,.75)),url("ocean.jpg");
+    background: linear-gradient(rgba(11,17,32,.55), rgba(11,17,32,.75)), url("hero.jpg");
     background-size:cover;
     background-position:center;
 }
