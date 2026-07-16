@@ -485,3 +485,125 @@ background:#3f2f6b;
 background:#6a4718;
 
 }
+/* =====================================================
+   VERSETUL ZILEI
+===================================================== */
+
+.verse-section{
+padding:90px 0;
+background:var(--cream);
+}
+
+.verse-box{
+background:white;
+border-radius:22px;
+padding:60px;
+text-align:center;
+box-shadow:var(--shadow);
+}
+
+.verse-box h2{
+font-family:'Cormorant Garamond',serif;
+font-size:48px;
+color:#071223;
+margin-bottom:20px;
+}
+
+.verse-text{
+font-size:28px;
+font-weight:600;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.reference{
+color:var(--gold);
+font-size:22px;
+font-weight:700;
+}
+
+/* =====================================================
+   BIBLIOTECA + PLAN
+===================================================== */
+
+.resources{
+padding:90px 0;
+background:white;
+}
+
+.resource-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.resource-card{
+background:#071223;
+color:white;
+border-radius:22px;
+padding:40px;
+box-shadow:var(--shadow);
+overflow:hidden;
+position:relative;
+}
+
+.resource-card img{
+margin-top:30px;
+border-radius:18px;
+}
+
+.resource-card h3{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.resource-card p{
+opacity:.92;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.resource-card .btn{
+margin-top:10px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+background:#06111f;
+color:white;
+padding:70px 0 30px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1fr;
+gap:40px;
+}
+
+.footer-grid h4{
+margin-bottom:20px;
+font-size:20px;
+}
+
+.footer-grid a{
+display:block;
+margin-bottom:12px;
+color:#d8d8d8;
+transition:.3s;
+}
+
+.footer-grid a:hover{
+color:var(--gold);
+}
+
+.copyright{
+margin-top:50px;
+padding-top:25px;
+border-top:1px solid rgba(255,255,255,.1);
+text-align:center;
+color:#bbb;
+font-size:15px;
+}
