@@ -198,6 +198,44 @@ font-weight:bold;
 .hero-image img{
 width:550px;
 border-radius:20px;
+}.navbar{
+    background:#081221;
+    height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+}
+
+.logo img{
+    height:60px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d8b24c;
+}
+
+.active{
+    color:#d8b24c;
+}
+
+.icons{
+    color:white;
+    font-size:22px;
+    display:flex;
+    gap:18px;
 }
 </style>
 
@@ -205,7 +243,29 @@ border-radius:20px;
 
 
 <body>
+<header class="navbar">
 
+    <div class="logo">
+        <img src="406C3567-613F-41F3-AF65-160BC65A769E.png" alt="Lumina Cuvântului">
+    </div>
+
+    <nav>
+        <a href="index.html" class="active">Acasă</a>
+        <a href="biblia.html">Biblia</a>
+        <a href="studii.html">Studii</a>
+        <a href="biblioteca.html">Bibliotecă</a>
+        <a href="rugaciuni.html">Rugăciuni</a>
+        <a href="plan.html">Plan de citire</a>
+        <a href="despre.html">Despre noi</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="icons">
+        🌙
+        🔍
+    </div>
+
+</header>
 
 <header class="navbar">
 
