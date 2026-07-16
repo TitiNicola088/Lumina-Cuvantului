@@ -395,6 +395,173 @@ margin-top:40px;
 justify-content:center;
 }
 
+}*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Inter,Arial,sans-serif;
+background:#f7f4ec;
+color:#222;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#071223;
+height:90px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 60px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo img{
+height:60px;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:17px;
+font-weight:600;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#d9ad26;
+}
+
+/* HERO */
+
+.hero{
+background:#071223;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 60px;
+min-height:700px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:64px;
+line-height:1.1;
+font-family:Georgia,serif;
+margin-bottom:25px;
+}
+
+.verset{
+font-size:24px;
+color:#d9ad26;
+margin-bottom:25px;
+}
+
+.hero-text p{
+font-size:22px;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+margin-top:40px;
+}
+
+.gold-btn,
+.dark-btn{
+padding:18px 34px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+transition:.3s;
+}
+
+.gold-btn{
+background:#d9ad26;
+color:white;
+}
+
+.gold-btn:hover{
+background:#be9318;
+}
+
+.dark-btn{
+border:2px solid #d9ad26;
+color:white;
+}
+
+.dark-btn:hover{
+background:#d9ad26;
+}
+
+.hero-image img{
+width:700px;
+max-width:100%;
+border-radius:18px;
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+/* TELEFON */
+
+@media(max-width:900px){
+
+.navbar{
+flex-direction:column;
+height:auto;
+padding:20px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:15px;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding:50px 25px;
+}
+
+.hero-text h1{
+font-size:46px;
+}
+
+.hero-text p{
+font-size:20px;
+}
+
+.buttons{
+justify-content:center;
+flex-direction:column;
+}
+
+.hero-image{
+margin-top:40px;
+}
+
+.hero-image img{
+width:100%;
+}
+
 }
 </style>
 
